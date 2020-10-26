@@ -1,0 +1,50 @@
+npm init
+
+yarn add -D typescript
+
+yarn add -D @types/node
+
+create dir src/test
+
+create/config tsconfig.js
+
+yarn add modules-alias
+
+yarn add -D @types/module-alias
+
+create dir src/util
+
+create file src/util/modules-alias.ts
+
+create file src/index.ts
+
+====
+
+yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+
+create file and configure /.eslintrc
+
+#https://github.com/waldemarnt/node-typescript-api/tree/step2
+
+add commands run eslint
+eslint ./src/ ./test --ext .ts
+eslint ./src/ ./test --ext .ts --fix
+
+====
+
+yarn add -D ts-node-dev
+
+add command run ts-node-dev
+
+start:dev ts-node-dev 'src/index.ts'
+
+
+====
+
+yarn add -D jest ts-jest @types/jest
+
+yarn add -D supertest @types/supertest
+
+====
+
+yarn test:functional
