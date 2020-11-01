@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "start:local": "ts-node-dev 'src/index.ts' ",   
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src/ ./test --ext .ts",
     "lint:fix": "eslint ./src/ ./test --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:functional": "jest --projects ./test --runInBand",
-    "start": "yarn build && node dist/src/index.js",
-    "start:dev": "ts-node-dev 'src/index.ts' "
+    "test:functional": "jest --projects ./test --runInBand"
   },
   "keywords": [
     "nodejs",
@@ -45,6 +45,7 @@
   "dependencies": {
     "@overnightjs/core": "^1.7.5",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2"
   }
 }
