@@ -4,7 +4,13 @@ C01P05
 yarn add express body-parser @overnightjs/core
 yarn add -D @types/express
 
-02/10/2020
+02/11/2020
 
 Node.js API [C02P01-2] - Desenvolvendo API client - Normalização de dados
 C02P01-3]
+
+03/11/2020
+
+yarn add config
+
+yarn add -D @types/config
