@@ -11,6 +11,12 @@ C02P01-3]
 
 03/11/2020
 
+C02P02
+C02P03
 yarn add config
-
 yarn add -D @types/config
+
+07/11/2020
+
+C02P04
+generetic, mock static e class
