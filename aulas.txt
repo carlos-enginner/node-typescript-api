@@ -25,5 +25,11 @@ C03P01
 https://www.websequencediagrams.com/. Parei minuto 9.15
 
 10/11/2020
+
 C03P01 Node.js API [C03P01] - Forecast Service - Aplicando Clean Architecture com Node js e Typescript
 C03P02 Node.js API [C03P02] - Forecast Service - Agrupando forecast por hora
+
+11/11/2020
+
+Node.js API [C03P03] - Forecast Service - Testando casos de erro
+Node.js API [C04P01] - Configurando MongoDB com Node js e Typescript
