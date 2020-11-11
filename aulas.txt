@@ -20,3 +20,10 @@ yarn add -D @types/config
 
 C02P04
 generetic, mock static e class
+
+C03P01
+https://www.websequencediagrams.com/. Parei minuto 9.15
+
+10/11/2020
+C03P01 Node.js API [C03P01] - Forecast Service - Aplicando Clean Architecture com Node js e Typescript
+C03P02 Node.js API [C03P02] - Forecast Service - Agrupando forecast por hora
