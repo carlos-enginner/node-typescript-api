@@ -30,6 +30,7 @@ coverage
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+config/database/
 
 # Dependency directories
 node_modules/
