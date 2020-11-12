@@ -33,3 +33,7 @@ C03P02 Node.js API [C03P02] - Forecast Service - Agrupando forecast por hora
 
 Node.js API [C03P03] - Forecast Service - Testando casos de erro
 Node.js API [C04P01] - Configurando MongoDB com Node js e Typescript
+Node.js API [C04P02] - Criando os testes funcionais para no novo módulo de Beach
+Quando criar test funcional e quando criar o test unitário?
+Otima pergunta! Eu gosto de seguir um padrão bem conhecido em BDD chamado outside-in ou seja, começa pelo teste mais abrangente (funcional ou integração) e vai descendo para as unidades.
+Normalmente se tem menos testes mais abrangentes pq eles são mais custosos, então tu teria um teste normalmente pra uma rota para o caso de sucesso, alguns para os casos de erro e as possiveis variações eu gosto de cobrir com testes de unidade nas unidades.
