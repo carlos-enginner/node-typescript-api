@@ -44,3 +44,6 @@ Node.js API [C04P03] - Adicionando o Beach Model com Mongoose e Typescript
 Node.js API [C04P04] - Integrando Beach e Forecast e mockando APIs com nock
 yarn add -D nock @types/nock
 
+18/11/2020
+
+Node.js API [C04P05] - Service bootstrap e testando a API manualmente
