@@ -53,4 +53,4 @@ Node.js API [C04P05] - Service bootstrap e testando a API manualmente
 Node.js API [C05P01] - Módulo de Users - Criando Controller e Model
 Node.js API [C05P02] - Módulo de Users - Mongoose hooks, validation e Type narrowing
 
-
+29/11/2020
