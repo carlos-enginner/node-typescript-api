@@ -26,7 +26,7 @@ describe('Users functional tests', () => {
       const response = await global.testRequest.post('/users').send(newUser);
       expect(response.status).toBe(400);
       expect(response.body).toEqual({
-        error: 'User validation failed: name: Path `name` is required ',
+        error: 'User validation failed: name: Path `name` is required.',
       });
 
     });

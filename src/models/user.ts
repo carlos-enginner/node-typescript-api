@@ -5,7 +5,7 @@ export interface User{
     name: string;
     email: string;
     password: string;
-};
+}
 
 export enum CUSTOM_VALIDATION {
     DUPLICATED = 'DUPLICATED',
@@ -15,7 +15,7 @@ interface UserModel extends Omit<User,'_id'>, Document{}
 
 const schema = new mongoose.Schema(
     {
-        name: {type:String, requred: true},
+        name: {type:String, required: true},
         email: {
             type: String,
             required: true,
