@@ -9,7 +9,7 @@ export interface User{
 
 export enum CUSTOM_VALIDATION {
     DUPLICATED = 'DUPLICATED',
-  }
+}
 
 interface UserModel extends Omit<User,'_id'>, Document{}
 
@@ -19,7 +19,7 @@ const schema = new mongoose.Schema(
         email: {
             type: String,
             required: true,
-            unique: [true,'Email must be unique'],
+            unique: [true, 'Email must be unique'],
         },
         password: {type: String, required:true},
     },
@@ -35,7 +35,7 @@ const schema = new mongoose.Schema(
 )
 
 /**
- * Validates the email and throws a validation error, otherwise it will throw a 500
+ * Verifica se há duplicidade de email no banco
  */
 schema.path('email').validate(
     async (email: string) => {
