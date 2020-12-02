@@ -54,3 +54,9 @@ Node.js API [C05P01] - Módulo de Users - Criando Controller e Model
 Node.js API [C05P02] - Módulo de Users - Mongoose hooks, validation e Type narrowing
 
 29/11/2020
+Node.js API [C05P02] - Módulo de Users - Mongoose hooks, validation e Type narrowing
+
+01/12/2020
+Node.js API [C05P03] - Módulo de Users - AuthService, bcrypt e Jest Matchers
+Node.js API [C05P04] - Módulo de Users - Json Web Token JWT com Node.js
+https://youtu.be/fy3BBdS-JW8?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=911

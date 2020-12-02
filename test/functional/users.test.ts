@@ -1,4 +1,5 @@
 import { User } from '@src/models/user';
+import AuthService from '@src/services/auth';
 
 describe('Users functional tests', () => {
   beforeEach(async () => {
@@ -6,7 +7,7 @@ describe('Users functional tests', () => {
   });
   describe('When creating a new user', () => {
 
-    it('should successfully create a new user', async () => {
+    it('should successfully create a new user with encrypted password', async () => {
       const newUser = {
         name: 'John Doe',
         email: 'john@mail.com',
@@ -14,7 +15,9 @@ describe('Users functional tests', () => {
       };
       const response = await global.testRequest.post('/users').send(newUser);
       expect(response.status).toBe(201);
-      expect(response.body).toEqual(expect.objectContaining(newUser));
+      await expect(AuthService.comparePasswords(newUser.password, response.body.password)).resolves.toBeTruthy();
+      expect(response.body).toEqual(expect.objectContaining({...newUser,...{password: expect.any(String)}}));
+      
 
     });
 
@@ -46,6 +49,25 @@ describe('Users functional tests', () => {
         code: 409,
         error: 'User validation failed: email: already exists in the database.',
       });
+    });
+  });
+
+  describe('When authenticating a user', () => {
+    it ('should generate a token for a valid user', async() => {
+        const newUser = {
+          name: 'John doe',
+          email: 'jonh@mail.com',
+          password: '1234',
+        };
+
+        await new User(newUser).save();
+        const response = await global.testRequest
+        .post('/users/authenticate')
+        .send({email: newUser.email, password: newUser.password});
+
+        console.log(response.body);
+
+        expect(response.body).toEqual(expect.objectContaining({token: expect.any(String)}));
     });
 
   });
