@@ -19,17 +19,24 @@ export class UsersControler extends BaseController {
     }
     
     @Post('authenticate')
-    public async authenticate(req:Request,res:Response):Promise<void>{
-        const {email, password} = req.body;
-        const user = await User.findOne({email:email});
+    public async authenticate(req: Request, res: Response): Promise<Response> {
+        const user = await User.findOne({email:req.body.email});
         if (!user) {
-            return;
+            return res.status(401).send({
+                code:401,
+                error: 'User not found!'
+            });
+
         }
-        if (!(await AuthService.comparePasswords(password, user.password))) {
-            return;
+
+        if (!await AuthService.comparePasswords(req.body.password, user.password)) {
+            return res.status(401).send({
+                code: 401,
+                error: 'Passwor does not match!',
+            });
         }
 
         const token = AuthService.generateToken(user.toJSON());
-        res.status(200).send({token:token});
+        return res.status(200).send({token:token});
     }
 }

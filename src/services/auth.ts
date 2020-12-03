@@ -1,5 +1,6 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import config from 'config';
 
 export default class AuthService 
 {
@@ -14,8 +15,8 @@ export default class AuthService
     }
 
     public static generateToken(payload:object): string {
-        return jwt.sign(payload, 'test',{
-            expiresIn: 10000,
+        return jwt.sign(payload, config.get('App.auth.key'),{
+            expiresIn: config.get('App.auth.tokenExpiresIn'),
         });
     }
 }
