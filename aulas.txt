@@ -60,3 +60,7 @@ Node.js API [C05P02] - Módulo de Users - Mongoose hooks, validation e Type narro
 Node.js API [C05P03] - Módulo de Users - AuthService, bcrypt e Jest Matchers
 Node.js API [C05P04] - Módulo de Users - Json Web Token JWT com Node.js
 https://youtu.be/fy3BBdS-JW8?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=911
+
+03/12/2020
+Node.js API [C05P05] - Módulo de Users - Express auth middleware e Typescript module augmentation
+https://youtu.be/rEooglp1EIw?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=2263
