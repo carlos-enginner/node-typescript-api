@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import jwt, { JsonWebTokenError } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import config from 'config';
 import { User } from '@src/models/user';
 
