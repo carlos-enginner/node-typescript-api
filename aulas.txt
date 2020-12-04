@@ -65,3 +65,5 @@ https://youtu.be/fy3BBdS-JW8?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=911
 Node.js API [C05P05] - Módulo de Users - Express auth middleware e Typescript module augmentation
 https://youtu.be/rEooglp1EIw?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=2263
 Node.js API [C06P01] - Produção - Configurando o ambiente de Umbler para deploy
+Node.js API [C06P02] - Produção - Continuous Integration (CI) com Github Actions Workflows e Node js
+
