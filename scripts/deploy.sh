@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 mkdir -p ~/.ssh
 echo -e "${SSH_KEY}//_/\\n" > ~/.ssh/id_rsa
