@@ -44,6 +44,6 @@ jobs:
         SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: ./scripts/deploy.sh
     - name: Deployment
-      run: git remote add umbler ssh://git@geonosis.deploy.umbler.com:9922/kwzqd04k/waldemar-surf-forecast-com.git && git push umbler master
+      run: git remote add umbler https://geonosis.deploy.umbler.com/kwzqd04k/waldemar-surf-forecast-com.git && git push umbler master
       env:
         CI: true
