@@ -77,3 +77,6 @@ https://youtu.be/WqGTBIdIRoo?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=1272
 07/12/2020
 Node.js API [C07P03] - Producionalização - Boas práticas em erros de API
 https://youtu.be/zDg3rwwzCwE?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=675
+
+Node.js API [C08P02] - Módulo de Rating - Iniciando o algoritmo de rating
+https://youtu.be/dngfjyrHtFk?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=1836
