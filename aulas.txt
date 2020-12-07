@@ -73,3 +73,7 @@ Node.js API [C07P01] - Producionalização - Logging em Node.js com pino
 Node.js API [C07P02] - Producionalização - Graceful shutdown e tratamento de erros em Node.js
 Node.js API [C07P03] - Producionalização - Boas práticas em erros de API
 https://youtu.be/WqGTBIdIRoo?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=1272
+
+07/12/2020
+Node.js API [C07P03] - Producionalização - Boas práticas em erros de API
+https://youtu.be/zDg3rwwzCwE?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&t=675
